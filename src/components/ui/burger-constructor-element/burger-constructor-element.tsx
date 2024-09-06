@@ -1,12 +1,11 @@
-import React, { FC, memo } from 'react';
+import { FC, memo } from 'react';
 import styles from './burger-constructor-element.module.css';
 import { ConstructorElement } from '@zlden/react-developer-burger-ui-components';
 import { BurgerConstructorElementUIProps } from './type';
 import { MoveButton } from '@zlden/react-developer-burger-ui-components';
 
 export const BurgerConstructorElementUI: FC<BurgerConstructorElementUIProps> =
-  memo(
-    ({
+  memo(({
       ingredient,
       index,
       totalItems,
@@ -14,7 +13,10 @@ export const BurgerConstructorElementUI: FC<BurgerConstructorElementUIProps> =
       handleMoveDown,
       handleClose
     }) => (
-      <li className={`${styles.element} mb-4 mr-2`}>
+      <li
+        className={`${styles.element} mb-4 mr-2`}
+        data-cy='constructor-ingredient'
+      >
         <MoveButton
           handleMoveDown={handleMoveDown}
           handleMoveUp={handleMoveUp}

@@ -12,3 +12,6 @@ export * from './order-info';
 export * from './order-status';
 export * from './orders-list';
 export * from './profile-menu';
+export * from './protected-route';
+export * from './center-with-title';
+
