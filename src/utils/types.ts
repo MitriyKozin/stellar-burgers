@@ -2,6 +2,7 @@ import { SyntheticEvent } from 'react';
 
 export type TIngredient = {
   _id: string;
+  // id: string;
   name: string;
   type: string;
   proteins: number;

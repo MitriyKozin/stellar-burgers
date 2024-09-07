@@ -7,11 +7,21 @@
   max-width: 1240px;
   height: 56px;
   margin: 0 auto;
+  justify-content: space-between;
+}
+
+.menu_part_left, .menu_part_right {
+  display: flex;
+  align-items: center;
 }
 
 .menu_part_left {
-  display: flex;
   flex-basis: 35%;
+}
+
+.menu_part_right {
+  flex-basis: 35%;
+  justify-content: flex-end;
 }
 
 .link {
@@ -26,12 +36,12 @@
 
 .link_position_last {
   display: flex;
-  justify-content: flex-end;
-  flex-basis: 35%;
+  align-items: center;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  margin: 0 auto;
+  justify-content: center;
+  flex-grow: 1;
 }
