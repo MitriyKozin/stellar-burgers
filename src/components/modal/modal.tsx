@@ -2,8 +2,9 @@ import { FC, memo, useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
 
 import { TModalProps } from './type';
-import { ModalUI } from '@ui';
+import { ModalUI, OrderStatusUI } from '@ui';
 import { useLocation } from 'react-router-dom';
+import { OrderStatus } from '@components';
 
 const modalRoot = document.getElementById('modals');
 
@@ -31,7 +32,8 @@ export const Modal: FC<TModalProps> = memo(({ title, onClose, children }) => {
   return ReactDOM.createPortal(
     <ModalUI title={title} onClose={onClose} titleStyle={titleStyle}>
       {children}
+      {/* <OrderStatus status="done" /> */}
     </ModalUI>,
     modalRoot as HTMLDivElement
-  );
+  );  
 });

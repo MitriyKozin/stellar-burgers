@@ -4,7 +4,7 @@ import styles from './modal.module.css';
 
 import { CloseIcon } from '@zlden/react-developer-burger-ui-components';
 import { TModalUIProps } from './type';
-import { ModalOverlayUI } from '@ui';
+import { ModalOverlayUI, OrderStatusUI } from '@ui';
 
 export const ModalUI: FC<TModalUIProps> = memo(
   ({ title, onClose, titleStyle, children }) => (
@@ -16,7 +16,9 @@ export const ModalUI: FC<TModalUIProps> = memo(
             <CloseIcon type='primary' onClick={onClose} />
           </button>
         </div>
-        <div className={styles.content}>{children}</div>
+        <div className={styles.content}>{children}
+            {/* {location.pathname.includes('order') && <OrderStatusUI textStyle="white" text="Статус заказа: В обработке" />} */}
+        </div>
       </div>
       <ModalOverlayUI onClick={onClose} />
     </>
