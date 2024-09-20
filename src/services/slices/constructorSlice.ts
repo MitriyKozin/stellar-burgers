@@ -95,6 +95,8 @@ const constructorSlice = createSlice({
   }
 });
 
+export { initialState as constructorInitialState };
+
 export const {
   addIngredient,
   removeIngredient,

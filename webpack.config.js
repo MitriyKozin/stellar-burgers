@@ -55,8 +55,8 @@ module.exports = {
       template: './public/index.html'
     }),
     new Dotenv({
-      path: './.env',
-    }),
+      path: './.env'
+    })
   ],
   resolve: {
     extensions: [
@@ -93,5 +93,5 @@ module.exports = {
     historyApiFallback: true,
     port: 4000,
     open: true
-  },
+  }
 };

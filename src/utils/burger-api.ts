@@ -2,7 +2,7 @@ import { setCookie, getCookie } from './cookie';
 import { TIngredient, TOrder, TUser } from './types';
 
 // export const URL = 'https://norma.nomoreparties.space/api';
-const URL = process.env.BURGER_API_URL;
+export const URL = process.env.BURGER_API_URL;
 
 const checkResponse = <T>(res: Response): Promise<T> =>
   res.ok ? res.json() : res.json().then((err) => Promise.reject(err));

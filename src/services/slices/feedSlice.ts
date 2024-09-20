@@ -25,7 +25,7 @@ export const getOrdersThunk = createAsyncThunk(
   getOrdersApi
 );
 
-const feedSlice = createSlice({
+export const feedSlice = createSlice({
   name: 'feed',
   initialState,
   reducers: {},
