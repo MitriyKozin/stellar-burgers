@@ -1,4 +1,7 @@
 /// <reference types="cypress" />
+
+import { title } from "process";
+
 // ***********************************************
 // This example commands.ts shows you how to
 // create various custom commands and overwrite
@@ -34,4 +37,7 @@
 //       visit(originalFn: CommandOriginalFn, url: string, options: Partial<VisitOptions>): Chainable<Element>
 //     }
 //   }
-// }
+// 
+Cypress.Commands.add('addIngredient', (type) => {
+  cy.get(`[data-cy="${type}"]`).children().first().children('button').click();
+});

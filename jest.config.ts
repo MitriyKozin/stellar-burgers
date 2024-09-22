@@ -2,6 +2,7 @@ import { JestConfigWithTsJest } from 'ts-jest';
 const jestConfig: JestConfigWithTsJest = {
   preset: 'ts-jest',
   rootDir: './',
+  testEnvironment: "jsdom",
   moduleDirectories: ['node_modules', 'src'],
   moduleNameMapper: {
     '@pages': ['<rootDir>/src/pages'],
@@ -11,7 +12,7 @@ const jestConfig: JestConfigWithTsJest = {
     '@utils-types': ['<rootDir>/src/utils/types'],
     '@api': ['<rootDir>/src/utils/burger-api.ts'],
     '@slices': ['<rootDir>/src/services/slices'],
-    '@store': ['<rootDir>/src/services/store'],
+    '@store': ['<rootDir>/src/services/store.ts'],
     '@selectors': ['<rootDir>/src/services/selectors'],
     '@hooks': ['<rootDir>/src/hooks/hooks']
   },

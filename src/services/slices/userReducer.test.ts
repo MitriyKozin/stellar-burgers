@@ -1,6 +1,14 @@
 import { expect, test, describe } from '@jest/globals';
 import { configureStore } from '@reduxjs/toolkit';
-import userReducer, { loginUserThunk, registerUserThunk, logoutUserThunk, updateUserThunk, forgotPasswordThunk, resetPasswordThunk, getUserThunk } from './userSlice';
+import userReducer, {
+  loginUserThunk,
+  registerUserThunk,
+  logoutUserThunk,
+  updateUserThunk,
+  forgotPasswordThunk,
+  resetPasswordThunk,
+  getUserThunk
+} from './userSlice';
 
 const setupStore = () =>
   configureStore({
