@@ -38,6 +38,11 @@ import { title } from "process";
 //     }
 //   }
 // 
-Cypress.Commands.add('addIngredient', (type) => {
-  cy.get(`[data-cy="${type}"]`).children().first().children('button').click();
+
+// Cypress.Commands.add('addIngredient', (type) => {
+//   cy.get(`[data-cy="${type}"]`).children().first().children('button').click();
+// });
+
+Cypress.Commands.add('addIngredient', function (type) {
+  cy.get(`[data-cy="${type}"]`).children().first().children('button').click({ force: true });
 });

@@ -33,7 +33,7 @@
       },
       {
         "_id": "643d69a5c3f7b9001cfa093c",
-        "name": "Краторная булка N-200i",
+        "name": "Флюоресцентная булка R2-D3",
         "type": "bun",
         "proteins": 80,
         "fat": 24,
@@ -46,18 +46,18 @@
         "__v": 0
       }
     ],
-    "_id": "66154cd097ede0001d064e7d",
+    "_id": "66f0f72c119d45001b5087da",
     "owner": {
-      "name": "Georg Shakillow",
-      "email": "lleksiv@gmail.com",
-      "createdAt": "2024-03-12T18:33:38.905Z",
-      "updatedAt": "2024-04-05T09:42:31.417Z"
+      "name": "Mitriy",
+      "email": "mitriy.kozin@mail.ru",
+      "createdAt": "2024-09-02T11:27:36.707Z",
+      "updatedAt": "2024-09-07T16:11:11.387Z"
     },
     "status": "done",
     "name": "Краторный био-марсианский бургер",
-    "createdAt": "2024-04-09T14:12:32.173Z",
-    "updatedAt": "2024-04-09T14:12:32.790Z",
-    "number": 37865,
+    "createdAt": "2024-09-02T11:27:36.707Z",
+    "updatedAt": "2024-09-07T16:11:11.387Z",
+    "number": 53712,
     "price": 2934
   }
 }
