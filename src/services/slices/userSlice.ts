@@ -1,5 +1,14 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import { registerUserApi, loginUserApi, getUserApi, updateUserApi, logoutApi, forgotPasswordApi, resetPasswordApi } from '@api';
+import {
+  registerUserApi,
+  loginUserApi,
+  getUserApi,
+  updateUserApi,
+  logoutApi,
+  refreshToken,
+  forgotPasswordApi,
+  resetPasswordApi
+} from '@api';
 import type { TRegisterData, TLoginData } from '@api';
 import { TUser } from '@utils-types';
 import { deleteCookie, setCookie } from '../../utils/cookie';

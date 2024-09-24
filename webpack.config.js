@@ -55,8 +55,8 @@ module.exports = {
       template: './public/index.html'
     }),
     new Dotenv({
-      path: './.env',
-    }),
+      path: './.env'
+    })
   ],
   resolve: {
     extensions: [
@@ -92,6 +92,15 @@ module.exports = {
     compress: true,
     historyApiFallback: true,
     port: 4000,
-    open: true
-  },
+    open: true,
+    client: {
+      // overlay: false, // Полностью отключить оверлей
+      // или
+      overlay: {
+        errors: false, // Отключить оверлей для ошибок
+        warnings: false, // Отключить оверлей для предупреждений
+      },
+    },
+
+    }
 };
